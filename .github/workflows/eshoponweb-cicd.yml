@@ -81,10 +81,10 @@ jobs:
     - name: deploy
       uses: azure/arm-deploy@v2
       with:
-        subscriptionId: ${{ env.SUBSCRIPTION-ID }}
-        resourceGroupName: ${{ env.RESOURCE-GROUP }}
+        subscriptionId: ${{ env.473051ed-91e4-4dce-ad96-df7137d94de8 }}
+        resourceGroupName: ${{ env.rg-eshoponweb-roger }}
         template: bicep-template/webapp.bicep
-        parameters: 'webAppName=${{ env.WEBAPP-NAME }} location=${{ env.LOCATION }}'
+        parameters: 'webAppName=${{ env.RogerWebAppUnique }} location=${{ env.eastus }}'
         failOnStdErr: false   
     
     # Publish website to Azure App Service (WebApp)
